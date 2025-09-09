@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="nav-title">
+                <div class="nav-button">
+                    <div class="nav-button-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" /></svg></div>
+                    <div class="nav-button-text">Dashboard</div>
+                </div>
+            </div>
+            <div class="main-icons">
+                <div class="nav-button">
+                    <div class="nav-button-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,3L2,12H5V20H19V12H22L12,3M12,8.75A2.25,2.25 0 0,1 14.25,11A2.25,2.25 0 0,1 12,13.25A2.25,2.25 0 0,1 9.75,11A2.25,2.25 0 0,1 12,8.75M12,15C13.5,15 16.5,15.75 16.5,17.25V18H7.5V17.25C7.5,15.75 10.5,15 12,15Z" /></svg></div>
+                    <div class="nav-button-text">Home</div>
+                </div>
+                <div class="nav-button">
+                    <div class="nav-button-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6,17C6,15 10,13.9 12,13.9C14,13.9 18,15 18,17V18H6M15,9A3,3 0 0,1 12,12A3,3 0 0,1 9,9A3,3 0 0,1 12,6A3,3 0 0,1 15,9M3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3H5C3.89,3 3,3.9 3,5Z" /></svg></div>
+                    <div class="nav-button-text">Profile</div>
+                </div>
+                <div class="nav-button">
+                    <div class="nav-button-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4C22,2.89 21.1,2 20,2Z" /></svg></div>
+                    <div class="nav-button-text">Messages</div>
+                </div>
+                <div class="nav-button">
+                    <div class="nav-button-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" /></svg></div>
+                    <div class="nav-button-text">History</div>
+                </div>
+                <div class="nav-button">
+                    <div class="nav-button-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,5H9V11H3V5M5,7V9H7V7H5M11,7H21V9H11V7M11,15H21V17H11V15M5,20L1.5,16.5L2.91,15.09L5,17.17L9.59,12.59L11,14L5,20Z" /></svg></div>
+                    <div class="nav-button-text">Tasks</div>
+                </div>
+                <div class="nav-button">
+                    <div class="nav-button-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.07 10.41A5 5 0 0 0 13.07 4.59A3.39 3.39 0 0 1 15 4A3.5 3.5 0 0 1 15 11A3.39 3.39 0 0 1 13.07 10.41M5.5 7.5A3.5 3.5 0 1 1 9 11A3.5 3.5 0 0 1 5.5 7.5M7.5 7.5A1.5 1.5 0 1 0 9 6A1.5 1.5 0 0 0 7.5 7.5M16 17V19H2V17S2 13 9 13 16 17 16 17M14 17C13.86 16.22 12.67 15 9 15S4.07 16.31 4 17M15.95 13A5.32 5.32 0 0 1 18 17V19H22V17S22 13.37 15.94 13Z" /></svg></div>
+                    <div class="nav-button-text">Communities</div>
+                </div>
+            </div>
+            <div class="help-section">
+                <div class="nav-button">
+                    <div class="nav-button-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" /></svg></div>
+                    <div class="nav-button-text">Settings</div>
+                </div>
+                <div class="nav-button">
+                    <div class="nav-button-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10,19H13V22H10V19M12,2C17.35,2.22 19.68,7.62 16.5,11.67C15.67,12.67 14.33,13.33 13.67,14.17C13,15 13,16 13,17H10C10,15.33 10,13.92 10.67,12.92C11.33,11.92 12.67,11.33 13.5,10.67C15.92,8.43 15.32,5.26 12,5A3,3 0 0,0 9,8H6A6,6 0 0,1 12,2Z" /></svg></div>
+                    <div class="nav-button-text">Support</div>
+                </div>
+                <div class="nav-button">
+                    <div class="nav-button-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.73 12,23C17.16,21.73 21,16.55 21,11V5L12,1Z" /></svg></div>
+                    <div class="nav-button-text">Privacy</div>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header-search">
+                <div class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg></div>
+                <div class="search-bar"><input type="text"></div>  
+            </div>
+            <div class="header-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 21H14C14 22.1 13.1 23 12 23S10 22.1 10 21M21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2S14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19M17 11C17 8.2 14.8 6 12 6S7 8.2 7 11V18H17V11Z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.25,13A1.25,1.25 0 0,1 9,14.25A1.25,1.25 0 0,1 7.75,13A1.25,1.25 0 0,1 9,11.75A1.25,1.25 0 0,1 10.25,13M15,11.75A1.25,1.25 0 0,0 13.75,13A1.25,1.25 0 0,0 15,14.25A1.25,1.25 0 0,0 16.25,13A1.25,1.25 0 0,0 15,11.75M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10.66,4.12C12.06,6.44 14.6,8 17.5,8C17.96,8 18.41,7.95 18.84,7.88C17.44,5.56 14.9,4 12,4C11.54,4 11.09,4.05 10.66,4.12M4.42,9.47C6.13,8.5 7.45,6.92 8.08,5.03C6.37,6 5.05,7.58 4.42,9.47M20,12C20,11.22 19.88,10.47 19.67,9.76C18.97,9.91 18.25,10 17.5,10C14.37,10 11.58,8.56 9.74,6.31C8.69,8.87 6.6,10.88 4,11.86C4,11.9 4,11.95 4,12C4,16.41 7.59,20 12,20C16.41,20 20,16.41 20,12Z" /></svg>
+                <div>Jal Moyong</div>
+            </div>
+            <div class="my-account">
+                <div class="profile-pic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.25,13A1.25,1.25 0 0,1 9,14.25A1.25,1.25 0 0,1 7.75,13A1.25,1.25 0 0,1 9,11.75A1.25,1.25 0 0,1 10.25,13M15,11.75A1.25,1.25 0 0,0 13.75,13A1.25,1.25 0 0,0 15,14.25A1.25,1.25 0 0,0 16.25,13A1.25,1.25 0 0,0 15,11.75M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10.66,4.12C12.06,6.44 14.6,8 17.5,8C17.96,8 18.41,7.95 18.84,7.88C17.44,5.56 14.9,4 12,4C11.54,4 11.09,4.05 10.66,4.12M4.42,9.47C6.13,8.5 7.45,6.92 8.08,5.03C6.37,6 5.05,7.58 4.42,9.47M20,12C20,11.22 19.88,10.47 19.67,9.76C18.97,9.91 18.25,10 17.5,10C14.37,10 11.58,8.56 9.74,6.31C8.69,8.87 6.6,10.88 4,11.86C4,11.9 4,11.95 4,12C4,16.41 7.59,20 12,20C16.41,20 20,16.41 20,12Z" /></svg></div>
+                <div class="greeting">Hi there,</div>
+                <div class="account-id">Jal Moyong (jmoyong04)</div>
+            </div>
+            <div class="account-actions">
+                <div class="account-button">New</div>
+                <div class="account-button">Upload</div>
+                <div class="account-button">Share</div>
+            </div>
+
+
+        </div>
+        <div class="home"></div>
+    </div>
+    
+</body>
+</html>

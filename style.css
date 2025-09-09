@@ -1,0 +1,131 @@
+:root{
+    --nav-main-color:rgb(0, 145, 255) ;
+    --main-color: rgb(240, 227, 227);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+            url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+}
+svg{
+    height: 1em;
+    width: 1em;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows:1fr 5fr ;
+}
+
+.nav{
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: var(--nav-main-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    padding: 1em;
+    
+}
+.main-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.help-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.nav svg{
+    fill: white;
+}
+.nav-button{
+    display: flex;
+    gap: 0.3em;
+}
+.nav-title > .nav-button{
+    font-size: 2em;
+}
+.header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1em;
+}
+.header svg{
+    height: 2em;
+    width: 2em;
+}
+
+.header-search{
+    display: flex;
+    gap: 0.3em;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-bar input{
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 12px;
+    height: 1.5em;
+    width: 300px;
+
+}
+.header-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.my-account{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.profile-pic{
+    grid-area: 1 / 1 / 3 / 2;
+}
+.profile-pic svg{
+    height: 2.5em;
+    width: 2.5em;
+}
+.greeting{
+    font-size: 0.7em;
+}
+.account-id{
+    font-size: 1.5em;
+}
+.account-actions{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.account-button{
+    background-color: var(--nav-main-color);
+    padding: 8px;
+    color: white;
+    border-radius: 12px;
+    width: 64px;
+    text-align: center;
+}
+.home{
+    background-color: var(--main-color);
+}
+
